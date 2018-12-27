@@ -14,8 +14,19 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong id="message"></strong>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <div class="container">
-      <p id="message"></p>
+      <!-- <p id="message"></p> -->
       <input type="email" id="txtEmail" placeholder="Email" />
       <input type="password" id="txtPassword" placeholder="Password" />
       <button id="btnLogin" class="btn btn-primary">Log In</button>
@@ -23,6 +34,7 @@
       <button id="btnLogout" class="btn btn-danger">Log Out</button>
       <button id="doSomething" class="btn btn-success">Add Info</button>
     </div>
+    <div id="list"></div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
